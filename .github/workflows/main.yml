@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Update ubuntu
-        run: apt update
       - name: Install Jython
         run: apt install jython -y
       - name: Run tests
