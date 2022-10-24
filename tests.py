@@ -9,5 +9,8 @@ class SimpeTest(TestCase):
         test_str = simple_func(name, age)
         self.assertEqual(test_str, "My name is %s. Age is %s" % (name, age))
         
+    def test_error(self):
+        self.assertTrue(False)
+        
 if __name__ == "__main__":
     main()
