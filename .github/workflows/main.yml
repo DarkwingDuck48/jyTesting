@@ -6,10 +6,9 @@ on:
 jobs:
   prepare:
     runs-on: ubuntu-latest
+    container: darkwingduck48/jython:latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install Jython
-        run: apt install jython -y
       - name: Run tests
         run: jython ./tests.py
       
